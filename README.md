@@ -4,9 +4,9 @@
 # 23/06/19~23/06/20
 
 ```
-html5 doctype, html, head, body, 
-meta, title, h1~h6, p, strong, em, s, del, sup,
-sub, blockquote, q, address, hr, br,
-&lt;, &gt;, &copy;, &amp;     
+html5 doctype/ html/ head/ body/ 
+meta/ title/ h1~h6/ p/ strong/ em/ s/ del/ sup/
+sub/ blockquote/ q/ address/ hr/ br/
+&lt;/ &gt;/ &copy;/ &amp;     
 ```
 
