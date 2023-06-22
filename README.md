@@ -10,6 +10,7 @@ sub/ blockquote/ q/ address/ hr/ br/
 ```
 
 # 23/06/21~23/06/22
+**html5 semantic tag는 각 레이아웃 영역 의미에 맞게 사용해야 한다.**
 ```
 div, span,
 header, nav, footer, main, section, article, aside,
