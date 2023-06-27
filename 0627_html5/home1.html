@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>form-1</title>
+</head>
+<body>
+    <h1>form 입력, 선택 컨트롤 하는 양식</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>로그인양식</legend><!-- 숨김대상 -->
+            <!-- 컨트롤 요소 위치(block) -->
+            <ul>
+                <li><input type="text" name="user_name" placeholder="이름"></li>
+                <li>
+                    <input type="text" name="user_id" placeholder="아이디" value="id">
+                </li>
+                <li>
+                    <input type="password" name="user_pws" placeholder="비번">
+                </li>
+                <li>
+                    성별:<br>
+                    <label for="male">남</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="female">여</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                </li>
+                <li>
+                    <!--  정보 저장 동의:<br>
+                    <label for="ok">동의함</label>
+                    <input type="radio" id="ok" name="radios" value="ok">
+                    <label for="notok">동의안함</label>
+                    <input type="radio" id="notok" name="radios" value="notok"> -->
+                        정보 저장 동의
+                        <label>동의함
+                            <input type="radio" name="radios" id="ok" value="ok">
+                        </label>
+                        <label>동의안함
+                            <input type="radio" name="radios" id="notok" value="notok">
+                        </label>
+                </li>
+                <li>
+                    관심사(2개 이상 선택하세요)
+                    <label>
+                        영화<input type="checkbox" name="hobby" id="movie" value="movie">
+                    </label>
+                    <label>
+                        운동<input type="checkbox" name="hobby" id="sports" value="spoch">
+                    </label>
+                    <label>
+                        독서<input type="checkbox" name="hobby" id="book" value="book">
+                    </label>
+                </li>
+                <li>
+                    첨부파일 <input type="file">
+                </li>
+            </ul>
+            <p>
+                <button type="submit">가입</button>
+                <button type="reset">가입취소</button>
+            </p>
+        </fieldset>
+    </form>
+
+    <form action="#" method="get">
+        <fieldset>
+            <legend>회원가입</legend>
+            <ul>
+                <li><input type="text" name="id2" placeholder="아이디"></li>
+                <li><input type="password" name="pws2" placeholder="비번"></li>
+                <li>성별:<br>
+                    <label for="man">남</label>
+                    <input type="radio" name="mw" id="man" value="man">
+                    <label for="wumen">여</label>
+                    <input type="radio" name="mw" id="wumen" value="women">
+                </li>
+                <li>정보 저장 동의<br>
+                    <label>
+                    동의함
+                    <input type="radio" id="yes" name="yn" value="yas">
+                    </label>
+                    <label>
+                    동의안함
+                    <input type="radio" id="no" name="yn" value="no">
+                    </label>
+                </li>
+                <li>관심사(2개 이상 선택하시오)
+                    <label>
+                    영화
+                    <input type="checkbox" id="movies" value="movies">
+                    </label>
+                    <label>
+                    운동
+                    <input type="checkbox" id="sportss" value="sportss">
+                    </label>
+                    <label>
+                    독서
+                    <input type="checkbox" id="books" value="books">
+                    </label>
+                </li>
+                <li>첨부파일<input type="file"></li>
+            </ul>
+            <p>
+                <button type="submit">가입</button>
+                <button type="reset">가입취소</button>
+            </p>
+        </fieldset>
+    </form>
+    <form action="#" method="post">
+        <fieldset>
+            <legend></legend>
+        </fieldset>
+    </form>
+    <form action="#" method="get">
+        <fieldset>
+            <legend></legend>
+        </fieldset>
+    </form>
+</body>
+</html>
