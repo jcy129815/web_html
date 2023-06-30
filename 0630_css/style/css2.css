@@ -1,0 +1,43 @@
+main {
+    background-color: rgba(0,0,0,0.8);
+    padding: 50px;
+}
+main .box {
+    width: 200px;
+    height: 200px;
+    font-size: 4rem;
+    border: 5px dotted #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 200px;
+    /*line-height 값과 height값을 동일하게 작성하면
+    요소가 수직 중앙으로 온다(1행일 경우 가능 / 2행일 경우 
+    padding-top으로 눈대중으로 내려서 맞춰야한다)*/
+}
+main .a {
+    /*패딩(안쪽 여백)추가 시 실제 크기에 변화를 주지 않는다
+    200px에서 50px을 뺀 값을 넓이로 주면 된다
+    안그러면 총 넓이가 250px인데 값으로는 위 때문에 200px로 뜬다*/
+    background-color: rgb(216, 83, 83);
+    box-sizing: border-box;
+    /* padding-right: 50px; */
+    /* width: 150px; */
+    float: left;
+}
+main .b {
+    background-color: rgb(79, 79, 237);
+    font-size: 3rem;
+    /* padding-top: 30px; */
+    box-sizing: border-box;
+    /* height: 170px; */
+    float: left;
+    clear: both;
+}
+main .c {
+    /* padding: 10px 20px; */
+    box-sizing: border-box;
+    /* width: 160px;
+    height: 180px; */
+    background-color: rgb(59, 216, 59);
+    float: left;
+}
