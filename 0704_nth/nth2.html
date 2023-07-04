@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Document</title>
+    <style>
+        #t, th, td {border: 1px solid black; border-collapse: collapse;}
+        tr, th, td {padding: 10px;}
+        #t thead tr th:nth-child(1) {background-color: yellow;}
+        #t tbody tr:nth-child(1) td:nth-child(2) {background-color: pink;}
+        #t tbody tr:nth-child(2) td:nth-child(1) {background-color: aqua;}
+        #t tbody tr:nth-child(3) td:nth-child(2) {background-color: lime;}
+    </style>
+</head>
+<body>
+    <table id="t"><!-- 패딩10px -->
+        <thead>
+            <tr>
+                <th scope="col">html5</th><!-- 노랑 -->
+                <th scope="col">css3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>header</td>
+                <td>nth-child</td><!-- 핑크 -->
+            </tr>
+            <tr>
+                <td>main</td><!-- 아쿠아 -->
+                <td>display</td>
+            </tr>
+            <tr>
+                <td>footer</td>
+                <td>border</td><!-- 라임 -->
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
