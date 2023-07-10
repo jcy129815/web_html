@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <style>
+        html,body {
+            background:
+            aqua /* 컬러 */ 
+            url(./su/img/news_img08.jpg) /* 이미지 */ 
+            no-repeat /* 반복 */
+            fixed /* 고정여부/스크롤 */
+            center bottom; /* 포지션/위치 */
+            background-size: 1000px; /* 이지미사이즈(구체적인 px값 가능) */
+            height: 200%;
+        }
+        #bg {background-color: rgba(255, 255, 255, 0.8); position: relative;}
+        #bg p {
+            background: yellow url(./su/img/news_img02.jpg) no-repeat;
+            height: 200px; width: 400px;
+            border: 5px solid #000;
+        }
+        #bg p:nth-child(2) {
+            border-color: red; position: relative; left: 100px;
+        }
+        #bg p:nth-child(3) {
+            background-repeat: repeat-x; 
+            position: absolute; right: 0; bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="bg">
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+    <h1>Vs code Emmet</h1>
+    <p><em>p>em 부모>자식</em></p>
+    <p><span>p>span+span</span><span>부모>자식+공동자식</span></p>
+    <p><span>p>span*2</span><span>2</span></p>
+    <p>동일 관계(형제)의 요소를 2개 이상 제작하고 싶을땐 
+        곱하기를 붙여서 Emmet기능을 실행한다
+    </p>
+    <ul>
+        <li><a href="#">ul>li*4>a</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+    </ul>
+    <div>
+        <p>div>p*5</p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+    <header>
+        <h1>header>h1+nav+p</h1>
+        <nav></nav>
+        <p></p>
+    </header>
+    <div class="test">
+        <p><em>.test>p>em</em></p>
+    </div>
+    <div id="box">
+        <section class="contents">
+            <h1>#box>section.contents>h1+p</h1>
+            <p></p>
+        </section>
+    </div>
+    <img src="./su/img/banner_01.jpg" alt="서울시청">
+    <video src="#"></video>
+    <form action="#"></form>
+    <form action="#" method="get"></form>
+    <input type="text">
+    <button></button>
+    <button type="submit"></button>
+    <label for=""><input type="checkbox" name="" id=""></label>
+    <table>
+        <thead>
+            <tr>
+                <th>table>thead>tr>th*2</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>tbody>tr>td*2</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="right"><!-- .right>form:get>select>option*2 -->
+        <form action="" method="get">
+            <select name="" id="">
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+            <button type="submit"></button><!-- button:submit -->
+        </form>
+        <p><em></em><span></span></p><!-- p>em+span -->
+    </div>
+
+</body>
+</html>
