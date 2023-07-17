@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>min</title>
+    <link rel="stylesheet" href="/styles/reset.css">
+    <style>
+        .layout {
+            max-width: 1000px;
+            min-width: 320px;
+            background-color: yellow;
+            height: 100vh;
+        }
+        .layout p {
+            text-align: center;
+            font-size: 2rem;
+            line-height: 2.0;
+        }
+        @media (min-width:481px) {
+            .layout {background-color: pink;}
+            .layout p {font-size: 2.5rem;}
+        }/*481px이상일때*/
+        @media (min-width:768px) {
+            .layout {background-color: blue;}
+            .layout p {font-size: 4rem;}
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <p>모바일 : 노랑색</p>
+        <p>테블릿 : 분홍</p>
+        <p>데스크탑 : 파랑</p>
+    </div>
+</body>
+</html>

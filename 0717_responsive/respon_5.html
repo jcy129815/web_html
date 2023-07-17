@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+/*min-width @media 모바일>태블릿>데스크*/
+        header,main,footer {
+            text-align: center;
+            padding: 20px;
+            max-width: 1000px;
+            min-width: 320px;
+            margin: 0 auto;
+        }
+        header {background-color: palegreen; height: 10vh;}
+        main {background-color: paleturquoise; height: 50vh;border: 5px solid black;}
+        main h1,p {text-align: center; line-height: 2;}
+        /*모바일*/
+        main h1 {}
+        main p {}
+        footer {background-color: palevioletred; height: 10vh;}
+        @media (min-width:480px) {
+            header {background-color: green; height: 10vh;}
+            main {background-color: blue; height: 60vh; border: none;} 
+            footer {background-color: red; height: 10vh;}
+            main h1 {font-size: 3rem; color: white;}
+            main p {font-size: 1.5rem; color: white;}
+        }
+        /*태블릿*/
+        @media (min-width:770px) {
+            header {background-color: blueviolet; height: 5vh;}
+            main {background-color: brown; height: 80vh; border: none;}
+            footer {background-color: burlywood; height: 5vh;}
+            main h1 {font-size: 5rem; color: white;}
+            main p {font-size: 2.5rem; color: white;}
+        }
+        /*데스크*/
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <main>
+        <h1>제목</h1>
+        <p>내용</p>
+    </main>
+    <footer>footer</footer>
+</body>
+</html>
