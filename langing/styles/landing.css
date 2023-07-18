@@ -1,0 +1,248 @@
+/*1. title*/
+.title_bg {
+    background: url(../imgs/bg1.png) no-repeat fixed center 90%;
+    background-size: cover;
+    margin: 0 auto;
+    position: relative;
+}
+.title_bg::after {
+    content: '';
+    display: block; height: 800px; width: 100%;
+    background: linear-gradient(180deg, rgba(255,255,255,0.7) 000%, rgba(0,0,0,1) 100%);
+
+    position: absolute; left: 0; top: 0;
+    /*absolute 적용 시 inline 처럼 변한다*/
+}
+/* 
+배경 이미지 위에 색(그라데이셔 올리기) 
+content: ''; 필수 속성이지만 필요가 없을시 
+빈칸으로 둔다(글씨넣는명령어)
+*/
+.title_bg .title {
+    height: 800px; width: 1200px; margin: 0 auto;
+    display: flex; flex-flow: column nowrap;
+    align-items: center;
+    position: relative; z-index: 90;
+}
+.title_bg #snow {
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 800px;
+    z-index: 200;
+}
+.title_bg .title .logo {
+    align-self: flex-start;
+    margin-bottom: 110px;
+}
+.title_bg .title .logo img {}
+.title_bg .title h1 {
+    font-size: 3.157rem; color: #fff; 
+    line-height: 70px; margin-bottom: 50px;
+}
+.title_bg .title h1 em {
+    font-size: 3.157rem; font-weight: 700; margin-left: 50px;
+}
+.title_bg .title .sponsor_btn {
+    border-radius: 50px; 
+    background: linear-gradient(90deg, rgba(255,147,0,1) 000%, rgba(255,114,0,1) 100%);
+    padding: 25px 65px; margin-bottom: 41px;
+}
+.title_bg .title .sponsor_btn span {
+    font-size: 1.77rem; color: #fff;
+    margin-right: 10px;
+}
+.title_bg .title .sponsor_btn img {}
+.title_bg .title .sponsor_qa {
+    background-color: #222; border-radius: 50px;
+    padding: 10px 12px;
+    align-self: self-end;
+}
+.title_bg .title .sponsor_qa span {
+    font-size: 1.33rem; color: #fff;
+    letter-spacing: -0.02em;
+    margin: 0 2px;
+}
+.title_bg .title .sponsor_qa img {width: 20px; height: 20px;}
+/*2.quiz-------------------------------------------------------------*/
+.quiz_bg {
+    background: url(../imgs/quiz_bg.png) no-repeat center 70%;
+    background-size:cover;
+}
+.quiz_bg .quiz {
+    width: 1200px; margin:0 auto;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+.quiz_bg .quiz .left {
+    background-color: purple;
+    width: 488px;
+}
+.quiz_bg .quiz .left h2 {
+    font-size: 3.157rem; font-weight: 600; 
+    letter-spacing: -0.02em; color: #fff;
+    text-align: center; margin-bottom: 35px;
+}
+.quiz_bg .quiz .left h3 {
+    
+    font-size: 1.333rem; font-weight: 500;
+    letter-spacing: -0.02em; color: #fff;
+    margin-bottom: 35px;
+}
+.quiz_bg .quiz .left .quiz_frm {}
+.quiz_bg .quiz .left .quiz_frm fieldset {}
+.quiz_bg .quiz .left .quiz_frm fieldset ul {margin-bottom: 35px;}
+.quiz_bg .quiz .left .quiz_frm fieldset ul li {margin-bottom: 25px;}
+.quiz_bg .quiz .left .quiz_frm fieldset ul li:last-child {margin-bottom: 0px;}
+.quiz_bg .quiz .left .quiz_frm fieldset ul li label {}
+.quiz_bg .quiz .left .quiz_frm fieldset ul li label input {
+    appearance: none;/*form input 요소 숨기기*/
+}
+.quiz_bg .quiz .left .quiz_frm fieldset ul li label #q1 {}
+.quiz_bg .quiz .left .quiz_frm fieldset ul li label #q2 {}
+.quiz_bg .quiz .left .quiz_frm fieldset ul li label #q3 {}
+.quiz_bg .quiz .left .quiz_frm fieldset ul li label #q4 {}
+.quiz_bg .quiz .left .quiz_frm fieldset ul li label span {
+    font-size: 1.33rem; letter-spacing: -0.02em;
+    color: #fff;
+    background: red url(../imgs/quiz_un_check.png) no-repeat;
+    padding-left: 34px;
+}
+/*상태선택자 라디오가 선택 될경우 span의 이미지 변경하기*/
+.quiz_bg .quiz .left .quiz_frm fieldset ul li label input:checked+span {
+    background: red url(../imgs/qiuz_check.png) no-repeat;
+}
+.quiz_bg .quiz .left .quiz_frm fieldset #answer_btn {
+    font-size: 1.333rem; font-weight: 500;
+    letter-spacing: -0.02em; color: #fff;
+    background-color: #222; border-radius: 50px;
+    padding: 13px 170px;
+}
+.quiz_bg .quiz .right {
+    width: 550px;
+}
+.quiz_bg .quiz .right h2 {
+    background-color: #ff7200; border-radius: 25px 25px 0 0; 
+    text-align: center; padding: 15px 120px;
+}
+.quiz_bg .quiz .right h2 img {}
+.quiz_bg .quiz .right h2 span {font-size: 1.333rem;}
+.quiz_bg .quiz .right .contents {
+    padding: 81px 69px;
+    background-color: #fff; text-align: center;
+    margin-bottom: 30px;
+    border-radius: 0 0 25px 25px;
+}
+.quiz_bg .quiz .right .contents em {font-size: 3.157rem; font-weight: 700;}
+.quiz_bg .quiz .right .contents span {font-size: 2.369rem;}
+.quiz_bg .quiz .right .update {text-align: center;}
+/*3. youtube*/
+.video_bg {
+    background: url(../imgs/video_bg.png) no-repeat center;
+    background-size: cover;
+    display: flex; flex-flow: column nowrap; 
+    align-items: center; padding: 100px 0;
+}
+.video_bg h2 {
+    text-align: center; font-weight: 700;
+    line-height: 80px; font-size: 3.157rem;
+    letter-spacing: -0.02em;
+    margin-bottom: 50px;
+}
+.video_bg iframe {
+    margin-bottom: 50px; width: 800px; height: 500px;
+}
+.video_bg .sponsor_btn {
+    padding: 30px 70px; border-radius: 50px; display: flex;
+    background: var(--unnamed, linear-gradient(93deg, #FF9300 0%, #FF7200 100%));
+}
+.video_bg .sponsor_btn span {
+    margin-right: 10px; font-size: 1.777rem; 
+    color: #fff; letter-spacing: -0.02em;
+}
+.video_bg .sponsor_btn img {}
+/*4. 감소*/
+.bg50 {
+    background: url(../imgs/50_bg.png) no-repeat center;
+    background-size: cover;
+    display: flex; flex-flow: column nowrap;
+    align-items: center;
+}
+.bg50 .wrap50 {
+    padding: 100px 0;
+}
+.bg50 .wrap50 h2 {
+    font-size: 2.369rem; color: #fff;
+    line-height: 55px; letter-spacing: -0.02em;
+    margin-bottom: 60px;
+}
+.bg50 .wrap50 h2 span {
+    font-size: 2.369rem; color: #222; background-color: #fff;
+    font-weight: 700;
+}
+.bg50 .wrap50 .contents {
+    font-size: 1.777rem; color: #fff;
+    letter-spacing: -0.02em; line-height: 40px;
+    margin-bottom: 50px;
+}
+.bg50 .wrap50 img {width: 1200px; height: 600px;}
+/* 5. 28조 */
+.warming_bg {
+    background-color: #f1f1f1;
+}
+.warming_bg .warming {
+    width: 1200px; margin: 0 auto;
+    padding: 100px 0;
+    display: flex; flex-flow: column nowrap;
+    align-items: center;
+}
+.warming_bg .warming h2 {
+    font-size: 2.369rem; font-weight: 700;
+    letter-spacing: -0.02em;
+}
+.warming_bg .warming .contents {
+    font-size: 1.333rem; font-weight: 500;
+    letter-spacing: -0.02em; line-height: 30px;
+    margin: 50px 0;
+}
+.warming_bg .warming ul {
+    display: flex; flex-flow: row nowrap;
+    
+}
+.warming_bg .warming ul li {
+    width: calc(33.33% - 40px / 3);
+    margin-right: 20px;
+}
+.warming_bg .warming ul li:last-child {
+    margin-right: 0px;
+}
+.warming_bg .warming ul li .top {
+    height: 300px;
+    background: center;
+    background-size: cover;
+}
+.warming_bg .warming ul li:nth-child(1) .top {
+    background-image: url(../imgs/28.png);
+}
+.warming_bg .warming ul li:nth-child(2) .top {
+    background-image: url(../imgs/27.png);
+}
+.warming_bg .warming ul li:nth-child(3) .top {
+    background-image: url(../imgs/28.png);
+}
+.warming_bg .warming ul li .top h3 {
+    font-size: 2.369rem; font-weight: 600;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+.warming_bg .warming ul li .top p {
+    font-size: 1.777rem; font-weight: 500;
+    color: #fff; 
+    text-align: center;
+}
+.warming_bg .warming ul li .list_contents {
+    font-size: 1.333rem; line-height: 30px; letter-spacing: -0.02em;
+    padding: 30px 15px;
+    background-color: #fff;
+}
