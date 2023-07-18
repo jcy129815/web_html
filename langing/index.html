@@ -9,28 +9,48 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="shortcut icon" href="./favicon3.ico" type="image/x-icon">
     <link rel="icon" href="./favicon3.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/landing.css">
 </head>
 <body>
     <!-- 1. title -->
-    <div class="bg">
+    <!-- <div class="bg">
         <div class="title">
-            <img src="" alt=""><!-- 판다 -->
+            <img src="" alt="">
             <div class="">
                 <h1>생존의 벼랑 끝에 서 있는 <em>북극곰을 지켜주세요</em></h1>
                 <a href="#">
                     <h2>북극돔 후원하기</h2>
-                    <img src="" alt=""><!-- 화살표 -->
+                    <img src="" alt="">
                 </a>
             </div>
             <a href="">
-                <img src="" alt=""><!-- 말풍선 -->
+                <img src="" alt="">
                 <h2>후원관련 자주 묻는 질문 보기</h2>
-                <img src="" alt=""><!-- 화살표 -->
+                <img src="" alt="">
             </a>    
         </div>
+    </div> -->
+    <!--1. 교수님 코드 -->
+    <div class="title_bg">
+        <div class="title">
+            <a href="#" class="logo"><img src="./imgs/logo.png" alt="WWF"></a>
+            <h1>생존의 벼랑 끝에 서 있는<br><em>북극곰을 지켜주세요</em></h1>
+            <a href="#" class="sponsor_btn">
+                <span>북극곰 후원하기</span>
+                <img src="./imgs/arrow_forward_ios.png" alt="">
+            </a>
+            <a href="#" class="sponsor_qa">
+                <img src="./imgs/chat.png" alt="">
+                <span>후원관련 자주 묻는 질문 보기</span>
+                <img src="./imgs/arrow_forward_ios.png" alt="">
+            </a>
+        </div>
+        <canvas id="snow">
+            <!-- 눈 내리는 자바스크립트 삽입태그 -->
+        </canvas>
     </div>
     <!-- 2. quiz -->
-    <div>배경
+    <!-- <div>배경
         <div>
             <div>퀴즈영역
                 <h1>Quiz</h1>
@@ -67,9 +87,59 @@
                 </div>
             </div>
         </div>
+    </div> -->
+    <!--2. 교수님 코드 -->
+    <div class="quiz_bg">
+        <div class="quiz">
+            <div class="left">
+                <h2>Quiz</h2>
+                <h3>20년 사이 북극 빙하 면적은 몇% 감소했을까요?</h3>
+                <form class="quiz_frm" action="#" method="get">
+                    <fieldset>
+                        <legend class="skip">퀴즈</legend>
+                        <ul>
+                            <li>
+                                <label for="q1">
+                                    <input type="radio" name="quiz" id="q1">
+                                    <span>30%</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q2">
+                                    <input type="radio" name="quiz" id="q2">
+                                    <span>40%</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q3">
+                                    <input type="radio" name="quiz" id="q3">
+                                    <span>50%</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q4">
+                                    <input type="radio" name="quiz" id="q4">
+                                    <span>60%</span>
+                                </label>
+                            </li>
+                        </ul>
+                        <button id="answer_btn" type="submit">
+                            정답 확인 하기
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="right">
+                <h2><img src="#" alt=""><span>퀴즈참여 현황</span></h2>
+                <p class="contents">
+                    <em>5529</em><span>명</span><span>참여</span>
+                </p>
+                <p class="update">*퀴즈 참여 현황은 매주 업데이트 됩니다</p>
+            </div>
+        </div>
     </div>
     <!-- 3. youtube -->
-    <div>
+    <!-- <div>
         <div>
             <h1>죽은 어미 곁을 떠나지 못하는 새끼 북극곰의 이야기</h1>
             <video src=""></video>
@@ -78,9 +148,18 @@
             <h2>북극곰 후원하기</h2>
             <img src="" alt="후원버튼">
         </a>
+    </div> -->
+    <!-- 교수님 코드 -->
+    <div class="video_bg">
+        <h2>죽은 어미 곁을 떠나지 못하는<br> 새끼 북극곰의 이야기</h2>
+        <iframe width="1180" height="664" src="https://www.youtube.com/embed/J6j7j2pxRII" title="북극곰 타라 캠페인" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <a href="#" class="sponsor_btn">
+            <span>북극곰 후원하기</span>
+            <img src="./imgs/arrow_forward_ios.png" alt="">
+        </a>
     </div>
     <!-- 4. 50% 감소 -->
-    <div>
+    <!-- <div>
         <div>
             <h1>
                 최근 20년 사이 북극의 빙하 면적은 <em>>50%</em>
@@ -95,25 +174,105 @@
                 <img src="" alt=""></img>
             </p>
         </div>
-    </div>
+    </div> -->
+    <!-- 교수님코드 -->
+    <section class="bg50">
+        <div class="wrap50">
+            <h2>
+                최근 20년 사이 북극의 빙하 면적은<br>
+                <span>50%</span> 감소하였습니다
+            </h2>
+            <p class="contents">
+                북극은 북극곰의 주 서식지이자 사냥터지만이<br>
+                순간에도 녹아 내리는 빙하로 인해 북극곰은 갈 곳을 잃었습니다
+            </p>
+            <img src="./imgs/Rectangle9.jpg" alt="">
+        </div>
+    </section>
     <!-- 5. 28조/27cm/322만명 -->
-    <div class="">
+    <!-- <div class="">
         <div class="">
-            <h1></h1>
+            <h2></h2>
             <p></p>
             <ul>
                 <li>
-                    <div></div>
+                    <div>
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                    <p></p>
+                </li>
+                <li>
+                    <div>
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                    <p></p>
+                </li>
+                <li>
+                    <div>
+                        <h3></h3>
+                        <p></p>
+                    </div>
                     <p></p>
                 </li>
             </ul>
         </div>
-    </div>
+    </div> -->
+    <!-- 5. 교수님코드 -->
+    <section class="warming_bg">
+        <div class="warming">
+            <h2>빙하가 녹으면 인류 재앙으로 돌아옵니다</h2>
+            <p class="contents">
+                지구온난화로 북극의 온도는 빠르게 상승하고 빙하는 더욱 빠르게 녹아가고 있습니다.
+                <br>빙하가 무너져 내리는 경고를 결코 무시해서는 안됩니다.
+            </p>
+            <ul>
+                <li>
+                    <div class="top">
+                        <h3>28조 톤</h3>
+                        <p>23년 동안 녹은 빙하의 양</p>
+                    </div>
+                    <p class="list_contents">
+                        1994년~2017년까지 23년동안 녹은 빙하의 양 28조 톤.
+                        해당 동안 해수면 약 3.5cm 상승. 
+                        영국 리즈대학교 앤드루 셰퍼드 교수는 
+                        "해수면이 1cm 높아질 때 600만명이 터전을 잃는다"라고 했습니다.
+                    </p>
+                </li>
+                <li>
+                    <div class="top">
+                        <h3>27cm</h3>
+                        <p>앞으로 높아질 지구 해수면</p>
+                    </div>
+                    <p class="list_contents">
+                        22년 8월 덴마크 그린란드 지질연구소 연구팀은 
+                        "지금까지 그린란드 빙하가 녹으면 해수면이 올라갈 것이라는 결과가 
+                        나왔지만 27cm는 지금껏 나온 예측치의 
+                        두배 수준"이라고 말했습니다.
+                    </p>
+                </li>
+                <li>
+                    <div class="top">
+                        <h3>332만 명</h3>
+                        <p>예상 침수 피해 인원</p>
+                    </div>
+                    <p class="list_contents">
+                        클라이밋 센트럴 데이터에 따르면 해수면 상승과 태풍으로 
+                        우리나라의 국토 5%가 물에 
+                        잠기고 332만 여명이 침수 피해 가능성이 있다고 예측됩니다
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
     <!-- 6. 지구위기 -->
     <!-- 7. wwf -->
     <!-- 8. 후원선물 -->
     <!-- 9. 후원하기 -->
     <!-- 10. 결제안내사항 -->
+    <!-- 자바스크립트 작성 위치 -->
+    <script src="./script/snow.js"></script>
 </body>
 </html>
 <!-- css background-image 사용 >> 주석 bg -->
